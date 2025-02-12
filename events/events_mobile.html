@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noor Project</title>
+  <link rel="stylesheet" href="style_events_mobile.css">
+
+  <script>
+    if (window.innerHeight < window.innerWidth) {
+        // Перенаправление на мобильную версию
+        window.location.href = "events.html";
+    }
+</script>
+</head>
+<body>
+  <header class="header">
+    <h1><a href="../index_mobile.html">noor project</a></h1>
+    <button class="menu-button" id="menu-button">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </button>
+  </header>
+  <nav class="side-menu" id="side-menu">
+    <ul class="menu-list">
+      <li><a href="../index_mobile.html">Наши работы</a></li>
+      <li><a href="../events/events_mobile.html">Мероприятия</a></li>
+      <li><a href="../exhibitions/exhibitions_mobile.html">Выставки</a></li>
+      <li><a href="../halls/halls_mobile.html">Залы<br> <br></a></li>
+      <li><a href="../news/news_mobile.html">Новости</a></li>
+      <li><a href="../about_us/about_mobile.html">О нас</a></li>
+      <li><a href="../contact/contact_mobile.html">Контакты</a></li>
+    </ul>
+    <button class="close-button" id="close-button">&times;</button>
+  </nav>
+  <main class="gallery">
+    <div class="gallery-item">
+        <div class="text_inf">
+            <p class="title">Мастер-класс по<br>созданиям масок</p>
+            <p class="information">Мастер-класс по созданиям масок<br>из папье-маше к наступающим<br>праздникам Хеллоуин и<br>МаардиПяэв<br> </p>
+            <p class="when_where">Когда: 26.10.2024, 16:00-19:00</p>
+            <p class="when_where">Где: Нарва, Vitatiim, tuleviku tn 7</p>
+        </div>
+        <img src="../img/events1.png " class="gallery-image">
+    </div>
+  </main>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
