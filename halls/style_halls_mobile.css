@@ -1,0 +1,177 @@
+/* styles.css */
+
+@font-face {
+    font-family: 'Jost';
+    src: url(../fonts/Jost-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Jost';
+    src: url(../fonts/Jost-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Jost';
+    src: url(../fonts/Jost-VariableFont_wght.ttf) format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: "Jost";
+    background-color: rgb(244, 244, 244);
+    color: black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Jost";
+    align-items: center;
+    padding: 30px 20px;
+    background-color: rgb(244, 244, 244);
+}
+
+h1 a {
+    font-family: "Jost";
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+}
+
+.menu-button {
+    font-family: "Jost";
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    cursor: pointer;
+}
+
+.menu-button .line {
+    width: 30px;
+    height: 3.5px;
+    background-color: black;
+    border-radius: 1px;
+}
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-item {
+    width: 95%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.gallery-image {
+    width: 65%;
+    max-width: 400px;
+    align-self:flex-start;
+    margin-bottom: 5px;
+}
+.when_where {
+    font-family: "Jost";
+    width: 100%;
+    padding-top: 0px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-size: 14px;
+    text-align: left;
+}
+
+
+.information {
+    font-family: "Jost";
+    word-wrap: break-word; /* Разрешаем переносить слова */
+    word-break: break-word; /* Для браузеров, которые поддерживают только это свойство */
+    white-space: normal;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: -10px;
+    margin-left: 5px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.title {
+    font-family: "Jost";
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: left;
+}
+.text1 {
+    font-family: "Jost";
+    word-wrap: break-word; /* Разрешаем переносить слова */
+    word-break: break-word; /* Для браузеров, которые поддерживают только это свойство */
+    white-space: normal;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 16px;
+    text-align: left;
+}
+
+
+/* Скрытое меню */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(244, 244, 244);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    transition: left 0.3s ease-in-out;
+}
+
+.side-menu.active {
+    left: 0;
+}
+
+.close-button {
+    position: absolute; /* Фиксированное позиционирование */
+    top: 5px; /* Отступ от верхнего края */
+    right: 18px; /* Отступ от правого края */
+    background: none;
+    border: none;
+    color: black;
+    font-size: 65px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.menu-list {
+    list-style: none;
+    padding-left: 30px;
+    margin: 80px 0 0;
+    width: 50%;
+}
+
+.menu-list li {
+    margin-bottom: 1px;
+}
+
+.menu-list a {
+    color: black;
+    font-family: "Jost";
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
