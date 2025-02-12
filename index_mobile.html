@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noor Project</title>
+  <link rel="stylesheet" href="style_mobile.css">
+
+  <script>
+    if (window.innerWidth >= 769) {
+        window.location.href = "index.html";
+    }
+  </script>
+</head>
+<body>
+  <header class="header">
+    <h1><a href="index_mobile.html">noor project</a></h1>
+    <button class="menu-button" id="menu-button">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </button>
+  </header>
+  <nav class="side-menu" id="side-menu">
+    <ul class="menu-list">
+      <li><a href="index_mobile.html">Наши работы</a></li>
+      <li><a href="events/events_mobile.html">Мероприятия</a></li>
+      <li><a href="exhibitions/exhibitions_mobile.html">Выставки</a></li>
+      <li><a href="#halls">Залы<br> <br></a></li>
+      <li><a href="news/news_mobile.html">Новости</a></li>
+      <li><a href="about_us/about_mobile.html">О нас</a></li>
+      <li><a href="contact/contact_mobile.html">Контакты</a></li>
+    </ul>
+    <button class="close-button" id="close-button">&times;</button>
+  </nav>
+  <main class="gallery">
+    <div class="gallery-item">
+      <a href="trash_book_mobile.html"><img src="img/Narva_sculpture.png" alt="Description" class="gallery-image"></a>
+      <p class="description">Выставка арт-объекта «Нарва как мусорная<br>книга», созданного в сотрудничестве с<br>"Narva youth".
+        Книга сделана из найденных материалов — на
+        свалках, на улицах или дома. Каждая страница
+        одновременно<br>является абстрактным изображением
+        и социальной критикой.
+        Выставка сопровождается сборником эссе
+        участников, размышляющих на тему:
+        «Что Нарве следует выбросить, а что сохранить?»</p>
+    </div>
+    <div class="gallery-item">
+      <a href="your_passport_mobile.html"><img src="img/pasport.png" alt="Description" class="gallery-image"></a>
+      <p class="description">Маша Привен вернулась в Нарву с вторым совместным проектом с местной молодежью.<br>В течение месяца участники активно сотрудничали, что привело к проведению финальной акции, во время которой они вступали в диалог с прохожими у границы<br>ЕС.
+        В этот период участники обсуждали и размышляли о проблеме институционального насилия, заложенного в паспортах, которые определяют личность и назначают идентичность.</p>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
